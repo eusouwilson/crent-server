@@ -10,5 +10,6 @@ Route.get("/gincana/:equipe", "GincanaController.show");
 Route.get("/correntista", "CorrentistaController.index");
 Route.get("/timeline", "TimelineController.index");
 Route.post("/timeline/:id", "TimelineController.store");
+Route.get("/timeline/:img", "TimelineController.show");
 
 

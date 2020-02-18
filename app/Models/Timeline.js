@@ -8,6 +8,17 @@ class Timeline extends Model {
     return 'timeline'
 
   }
+
+  static get computed () {
+    return ['url']
+  }
+
+  getUrl ({ path }) {
+    return `http://apibanco.mnem.org.br
+    /images/${path}`
+  }
+
+
   correntista() {
     return this.belongsTo('App/Models/Correntista')
   }
